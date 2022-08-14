@@ -30,16 +30,16 @@ const Home: NextPage = () => {
 
       <main>
         <div className="container mx-auto flex justify-center flex-col max-w-md text-center">
-          Pastebin Clone
+          <h1 className="text-4xl mb-4 mt-6">Pastebin Clone</h1>
           <p className="text-center">Paste a snippet to save for later</p>
           <textarea
-            className="border p-2 h-48 mt-4 mb-6 w-full"
+            className=" p-2 h-48 mt-4 mb-6 w-full text-white outline-2 outline-indigo-700 border-0 bg-zinc-700"
             onChange={(e) => setSnippetText(e.target.value)}
             value={snippetText}
           ></textarea>
           <button
             onClick={handleSave}
-            className="bg-blue-400 p-2 text-white hover:bg-blue-300 rounded-sm disabled:opacity-30"
+            className="bg-indigo-700 p-2 text-white hover:bg-indigo-800 rounded-sm disabled:opacity-30 "
             disabled={!snippetText.length}
           >
             Save Snippet
