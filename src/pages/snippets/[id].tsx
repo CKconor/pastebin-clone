@@ -17,7 +17,9 @@ const SnippetPage: NextPage = () => {
   return (
     <>
       <div className="container mx-auto flex justify-center flex-col max-w-md">
-        <h1 className="bold text-4xl text-center mb-6">Your snippet of {id}</h1>
+        <h1 className="bold text-4xl text-center mb-6 mt-6">
+          Your snippet of {id}
+        </h1>
         <textarea
           disabled
           className="w-full h-48 mx-auto mb-4 p-2"
