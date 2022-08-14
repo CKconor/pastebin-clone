@@ -26,7 +26,7 @@ const SnippetPage: NextPage = () => {
           value={snippet.data?.text}
         ></textarea>
         <button
-          className="bg-indigo-800 flex-grow-0 p-2 text-white hover:bg-indigo-700 rounded-sm"
+          className="bg-indigo-700 p-2 text-white hover:bg-indigo-800 rounded-sm disabled:opacity-30"
           onClick={handleCopyToClipboard}
         >
           Copy to Clipboard
